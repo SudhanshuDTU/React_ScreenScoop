@@ -55,7 +55,7 @@ const Carousel = ({data,loading,endpoint,title}) => {
                         <div className="posterBlock"><Img src={posterUrl}/> <CircleRating rating={item.vote_average.toFixed(1)}/> <Genres data={item.genre_ids.slice(0,1)}/></div>
                         <div className="textBlock">
                             <span className="title">{item.title || item.name}</span>
-                            <span className="date">{dayjs(item.release_Date).format("D MMM,YYYY")}</span>
+                            <span className="date">{dayjs(item.release_Date || item.first_air_date).format("D MMM,YYYY")}</span>
                             </div>
                     </div>)
                 })}
