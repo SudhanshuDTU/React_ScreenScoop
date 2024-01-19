@@ -55,7 +55,7 @@
                 .react-select__value-container {
                     .react-select__placeholder,
                     .react-select__input-container {
-                        color: white;
+                        color: rgb(235, 238, 244);
                         margin: 0 10px;
                     }
                 }
@@ -82,6 +82,7 @@
                 top: 40px;
                 margin: 0;
                 padding: 0;
+                color: #000;
             }
         }
     }
