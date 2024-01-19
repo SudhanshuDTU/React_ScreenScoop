@@ -25,14 +25,15 @@ const DetailsBanner = ({ video, crew }) => {
     const [show, setshow] = useState(false);
     const [videoId,setvideoId] = useState(null);
 
-    const director = crew?.filter((f)=> f.job === "Director");
-    const writer = crew?.filter((f)=> f.job === "Screenplay" || "Story" || "Writer" );
-
+    
     const {mediaType,id} = useParams()
     const {data,loading} = useFetch(`/${mediaType}/${id}`);
     const {url} = useSelector((state)=>state.home);
 
     const _genres = data?.genres?.map((g)=> g.id);
+    const director = crew?.filter((f) => f.job === "Director");
+    const writer = crew?.filter((f)=> f.job === "Screenplay" || f.job === "Story" || f.job === "Writer" );
+
 
 
     return (
