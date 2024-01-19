@@ -10,8 +10,8 @@ import Home from './pages/Home/Home';
 import Details from "./pages/Details/Details"
 import SearchResult from "./pages/SearchResult/SearchResult"
 import Explore from "./pages/Explore/Explore"
-import PageNotFound from "./pages/404/pageNotFound"
 import {BrowserRouter,Route,Routes} from "react-router-dom"
+import PageNotFound from './pages/404/PageNotFound';
 
 
 function App() {
