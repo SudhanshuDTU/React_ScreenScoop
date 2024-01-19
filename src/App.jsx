@@ -2,7 +2,7 @@ import { useState,useEffect } from 'react'
 import './App.css'
 import { fetchDataFromApi } from './utils/api';
 import { useSelector,useDispatch } from 'react-redux';
-import { getApiConfiguration,getGenres } from './store/Homeslice';
+import { getApiConfiguration,getGenres } from './store/homeSlice';
 
 import Header from "./components/Header/Header"
 import Footer from "./components/Footer/Footer"
