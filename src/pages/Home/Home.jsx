@@ -11,6 +11,9 @@ function Home() {
     <>
     <div className='homePage'>
     <HeroBanner/>
+    <div className='me'>
+      <a href="https://github.com/SudhanshuDTU" target='_blank' className='me1'> <span className='me2'>Created By - Sudhanshu Jha</span></a>
+    </div>
     
     <Trending/>
     <Popular/>
